@@ -1,0 +1,163 @@
+:root {
+    --white: #fff;
+    --gold: gold;
+    --transparent: rgba(0,0,0,0.2);  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    text-decoration: none;
+}
+
+/* background image for home page */
+
+.home-body {
+    background-image: url(images/cat_sailboat.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* styling for navigation menu */
+
+header {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background: var(--transparent);
+}
+
+.logo img {
+    width: 75px;
+    cursor: pointer;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav li a {
+    color: var(--white);
+}
+
+.header-socials a {
+    display: inline-block;
+    color: var(--white);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+nav li a:hover,
+.header-socials a:hover {
+    color: var(--gold);
+    transition: all 0.4s ease 0s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: var(--white);
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+/* styling for artwork */
+
+.artwork-body {
+    background-color: #222429;
+}
+
+.card {
+    padding: 2em;
+    border: 1px solid rgb(75, 82, 92);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card h2 {
+    color: var(--white);
+}
+
+.card img {
+    width: 100%;
+}
+
+.artwork-container {
+    display: grid;  
+    border: 1px solid red;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    gap: 10px;
+    justify-content: center;
+}
+
+/* media queries */
+
+@media (min-width: 1024px) {
+    .home-body {
+        animation: shrink 7s infinite alternate;
+    }
+}
+
+@media (max-width: 768px) {
+    .checkbtn {
+      display: block;
+      order: 1;
+      margin-right: 20px;
+    }
+  
+    ul {
+      position: fixed;
+      top: 80px;
+      right: -100%;
+      background: var(--transparent);
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+    }
+  
+    ul li {
+      margin: 20px 0;
+    }
+  
+    ul li a {
+      font-size: 20px;
+    }
+  
+    #check:checked ~ ul {
+      right: 0;
+    }
+  }
+
+
+
+  /* CSS animations */
+
+@keyframes shrink {
+    0% {
+      background-size: 110% 110%;
+    }
+    100% {
+      background-size: 100% 100%;
+    }
+  }
+
