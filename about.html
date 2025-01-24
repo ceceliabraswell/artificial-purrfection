@@ -1,41 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Artificial Purrfection</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&family=Smooch+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="about-body">
     <header class="header">
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-        </div>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class='bx bx-menu'></i>
-            </label>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="artwork.html">Artwork</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-socials">
-            <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
-            <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a>
-        </div>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+      </div>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="bx bx-menu"></i>
+        </label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="artwork.html">Artwork</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="socials">
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="bx bxl-facebook"></i
+        ></a>
+      </div>
     </header>
+    
+    <div class="about-container">
+        <div class="about-section">
+            <div class="inner-container">
+              <h1>About Me</h1>
+              <p class="text">
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Platea habitasse
+                dignissim ullamcorper ante, himenaeos odio et. Proin facilisi volutpat
+                commodo pulvinar diam pulvinar vestibulum? Platea malesuada varius
+                taciti consectetur in maximus est. Per semper consequat nisi eget
+                penatibus enim mauris. Nullam praesent felis sapien tempus; nec quis
+                praesent adipiscing.
+              </p>
+              <div class="skills">
+                <span>Web Design</span>
+                <span>Project Management</span>
+                <span>Web Developer</span>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="logo">
+          <img src="images/logo-white.png" alt="logo" />
+        </div>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="artwork.html">Artwork</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="socials">
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Artificial Purrfection.</p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
-s
