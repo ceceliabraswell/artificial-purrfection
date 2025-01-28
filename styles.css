@@ -2,7 +2,7 @@
     --white: #fff;
     --off-white: #fff8f8;;
     --gold: gold;
-    --transparent: rgba(0,0,0,0.2);  
+    --transparent: rgba(0, 0, 0, 0.379);  
     --transparent2: rgba(0, 0, 0, 0.714);  
 }
 
@@ -217,8 +217,6 @@ nav li a:hover,
     font-size: 13px;
 }
 
-
-
 /* footer */
 
 .footer {
@@ -300,43 +298,39 @@ nav li a:hover,
         font-size: 13px;
         gap: 15px;
     }
-
-    /* .inner-container {
-        padding: 100%;
-    } */
 }
 
 @media screen and (max-width: 768px) {
     .checkbtn {
-      display: block;
-      order: 1;
-      margin-right: 20px;
+        display: block;
+        order: 1;
+        margin-right: 20px;
     }
-  
+
     ul {
-      position: fixed;
-      top: 80px;
-      right: -100%;
-      background: var(--transparent);
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      transition: all 0.3s;
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    background: var(--transparent);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
     }
-  
+
     ul li {
-      margin: 20px 0;
+    margin: 20px 0;
     }
-  
+
     ul li a {
-      font-size: 20px;
+    font-size: 20px;
     }
-  
+
     #check:checked ~ ul {
-      right: 0;
+    right: 0;
     }
 
     .image-modals {
@@ -354,15 +348,26 @@ nav li a:hover,
         font-family: 18px;
     }
 
-    /* .about-section {
-        background-size: 100%;
-        padding: 100px 40px;
+    .image-modals {
+        width: 100%;
+    }
+
+    .about-section {
+        padding: 0;
     }
 
     .inner-container {
-        width: 100%;
-    } */
-     
+        padding: 75px;
+        text-align: center;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        font-size: 13px;
+        gap: 15px;
+    }
   }
 
 
