@@ -288,6 +288,19 @@ nav li a:hover,
         padding: 0;
     }
 
+    .inner-container {
+        padding: 75px;
+        text-align: center;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        font-size: 13px;
+        gap: 15px;
+    }
+
     /* .inner-container {
         padding: 100%;
     } */
