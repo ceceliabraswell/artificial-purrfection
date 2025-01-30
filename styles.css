@@ -34,6 +34,9 @@ header {
     align-items: center;
     padding: 30px 10%;
     background: var(--transparent);
+}
+
+.header-padding {
     margin-bottom: 50px;
 }
 
@@ -173,18 +176,91 @@ nav li a:hover,
 
 /* About Us page */
 
-.about-container {
+.about {
+    width: 100%;
+    height: 100vh;
+    background-color: #161922;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-content img {
+    height: auto;
+    width: 600px;
+    max-width: 100%;
+}
+
+.about-text {
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.about-content {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1 {
+    color: #ffcc74;
+    font-size: 85px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.about-text h5 {
+    color: var(--white);
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.about-text p {
+    color: var(--white);
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+.about-button {
+    background-color: #ffcc74;
+    color: #000;
+    border: 2px solid transparent;
+    padding: 10px 30p;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.about-button:hover {
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 2px solid #ffcc74;
+    color: #ffcc74;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+
+/* .about-container {
     font-family: "Open Sans", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* min-height: 100vh; */
+    border: 2px solid red;
 }
 
 .about-section {
     background: url(images/cat_sailboat.png) no-repeat left;
     background-size: 55%;
-    /* background-color: var(--off-white); */
     overflow: hidden;
     padding: 50px 0;
 }
@@ -215,7 +291,8 @@ nav li a:hover,
     justify-content: space-between;
     font-weight: 700;
     font-size: 13px;
-}
+} */
+
 
 /* footer */
 
@@ -223,6 +300,9 @@ nav li a:hover,
     background-color: #000;
     /* color: #fff; */
     padding: 20px 0;
+}
+
+.footer-padding {
     margin-top: 50px;
 }
 
@@ -261,12 +341,16 @@ nav li a:hover,
         animation: shrink 7s infinite alternate;
     }
 
+    .about-container {
+        padding: 0 50px;
+    }
+
     .inner-container {
         padding: 80px;
     }
 }
 
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
     .about-section {
         background-size: 100%;
         padding: 100px 40px;
@@ -275,9 +359,9 @@ nav li a:hover,
     .inner-container {
         width: 100%;
     }
-}
+} */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .image-modals {
         width: 100%;
     }
@@ -298,9 +382,13 @@ nav li a:hover,
         font-size: 13px;
         gap: 15px;
     }
-}
+} */
 
 @media screen and (max-width: 768px) {
+    .image-modals {
+        width: 100%;
+    }
+
     .checkbtn {
         display: block;
         order: 1;
@@ -308,29 +396,29 @@ nav li a:hover,
     }
 
     ul {
-    position: fixed;
-    top: 80px;
-    right: -100%;
-    background: var(--transparent);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s;
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        background: var(--transparent);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
     }
 
     ul li {
-    margin: 20px 0;
+        margin: 20px 0;
     }
 
     ul li a {
-    font-size: 20px;
+        font-size: 20px;
     }
 
     #check:checked ~ ul {
-    right: 0;
+        right: 0;
     }
 
     .image-modals {
@@ -352,12 +440,12 @@ nav li a:hover,
         width: 100%;
     }
 
-    .about-section {
+    /* .about-section {
         padding: 0;
     }
 
     .inner-container {
-        padding: 75px;
+        padding: 75px; 
         text-align: center;
     }
 
@@ -367,9 +455,9 @@ nav li a:hover,
         font-weight: 700;
         font-size: 13px;
         gap: 15px;
-    }
+    }  */
+    
   }
-
 
 
   /* CSS animations */
