@@ -176,8 +176,8 @@ nav li a:hover,
 
 /* About Us page */
 
-.about-content {
-    margin: 40px 70px;
+.about-summary {
+    margin: 20px 70px 40px;
 }
 
 .about-section h2 {
