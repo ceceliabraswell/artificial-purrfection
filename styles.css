@@ -176,35 +176,6 @@ nav li a:hover,
 
 /* About Us page */
 
-.about-inner h1 {
-    font-size: 120px;
-    text-align: center;
-    color: var(--off-white);
-}
-
-.about-section p {
-    font-size: 16px;
-    color: var(--transparent2);
-    text-align: justify;
-    line-height: 30px;
-    margin: 0 50px 40px;
-}
-
-.image-1 {
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 90vh;
-}
-
-.image-1 {
-    background: url(images/about-image.png) no-repeat;
-}
-
-.about-inner {
-    padding: 10% 0;
-}
-
 .about-content {
     margin: 40px 70px;
 }
@@ -352,6 +323,35 @@ nav li a:hover,
     }
 } */
 
+@media screen and (min-width: 768px) {
+    .about-inner h1 {
+        font-size: 120px;
+        text-align: center;
+        color: var(--off-white);
+    }
+    
+    .about-section p {
+        font-size: 16px;
+        color: var(--transparent2);
+        text-align: justify;
+        line-height: 30px;
+        margin: 0 50px 40px;
+    }
+    
+    .image-1 {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 90vh;
+        background: url(images/about-image.png) no-repeat;
+    }
+    
+    .about-inner {
+        padding: 10% 0;
+    }
+    
+}
+
 @media screen and (max-width: 768px) {
     .image-modals {
         width: 100%;
@@ -406,6 +406,10 @@ nav li a:hover,
 
     .image-modals {
         width: 100%;
+    }
+
+    .image-1 {
+        visibility: collapse;
     }
 
     /* .about-section {
