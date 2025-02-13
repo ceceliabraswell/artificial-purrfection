@@ -197,7 +197,8 @@ nav li a:hover,
     padding: 10% 0;
 }
 
-.about-content h2 {
+.about-content h2,
+.exhibitions-content h2 {
     font-size: 2rem;
     color: var(--dark-gray);
     text-align: center;
@@ -206,12 +207,26 @@ nav li a:hover,
     margin: 20px 0 10px;
 }
 
+.about-content p,
+.exhibitions-content p {
+    font-size: 1rem;
+    color: var(--dark-gray);
+}
+
 .about-content p {
     font-size: 1rem;
     color: var(--dark-gray);
     text-align: justify;
     line-height: 30px;
-    margin: 0 50px 40px;
+    margin: 0 70px 40px;
+}
+
+.exhibitions-content {
+    padding-bottom: 50px;
+}
+
+.exhibitions-content p {
+    text-align: center;
 }
 
 /* footer */
@@ -331,6 +346,10 @@ nav li a:hover,
     }
 
     /* about page */
+
+    .image-1 {
+        padding: 40px 50px;
+    }
 
     .about-inner h1 {
         font-size: 3rem;
