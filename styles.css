@@ -197,35 +197,39 @@ nav li a:hover,
     padding: 10% 0;
 }
 
+.about-content {
+    padding-bottom: 20px;
+}
+
 .about-content h2,
 .exhibitions-content h2 {
     font-size: 2rem;
     color: var(--dark-gray);
     text-align: center;
     font-weight: 300;
-    letter-spacing: 2px;
     margin: 20px 0 10px;
 }
 
 .about-content p,
 .exhibitions-content p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--dark-gray);
 }
 
 .about-content p {
-    font-size: 1rem;
+    font-family: "Cormorant Garamond", serif;
     color: var(--dark-gray);
     text-align: justify;
     line-height: 30px;
-    margin: 0 70px 40px;
+    margin: 0 70px 15px;
 }
 
 .exhibitions-content {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .exhibitions-content p {
+    line-height: 1.5;
     text-align: center;
 }
 
