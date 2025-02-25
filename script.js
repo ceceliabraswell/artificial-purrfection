@@ -1,3 +1,6 @@
+// JS for scroll to top button on artwork page
+
+
 // function to create modals for all images
 document.addEventListener("DOMContentLoaded", function(){
     const images = document.querySelectorAll(".card img");
