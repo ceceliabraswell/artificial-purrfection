@@ -15,6 +15,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* background image for home page */
 
 .home-body {
@@ -84,9 +88,32 @@ nav li a:hover,
     display: none;
 }
 
-/* styling for scroll to top button */
+/* styling for scroll to top */
 
+.scrollUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.18rem;
+    color: var(--white);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+    background: crimson;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+}
 
+.scrollUp.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(-50px);
+}
 
 /* styling for artwork */
 

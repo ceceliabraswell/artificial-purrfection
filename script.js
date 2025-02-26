@@ -1,7 +1,4 @@
-// JS for scroll to top button on artwork page
-
-
-// function to create modals for all images
+// create modals for images on artwork page
 document.addEventListener("DOMContentLoaded", function(){
     const images = document.querySelectorAll(".card img");
 
@@ -37,7 +34,20 @@ document.addEventListener("DOMContentLoaded", function(){
 
 });
 
-// function to close modals when clicking the close button
+
+// function to close modals on artwork page when clicking the close button
 function closeModal(modalId) {
     document.getElementById(modalId).style.display = "none";
 }
+
+
+// code for scroll up feature on artwork page
+const scrollUp = document.querySelector('.scrollUp'); //add event listener to window object to listen from scroll event
+
+window.addEventListener("scroll", () => {   
+    if (window.scrollY > 100) { // if user scrolls down more than 60px, the scroll up icon appears
+        scrollUp.classList.add("active");   // changes opacity of scroll up icon to 1 after 100px
+    } else {
+        scrollUp.classList.remove("active");  // changes opacity of scroll up icon to 0 after 100px
+    }
+})
