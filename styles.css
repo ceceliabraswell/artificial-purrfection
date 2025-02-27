@@ -2,6 +2,7 @@
     --white: #fff;
     --off-white: #fff8f8;;
     --gold: gold;
+    --dark-gray: #555;
     --transparent: rgba(0, 0, 0, 0.379);  
     --transparent2: rgba(0, 0, 0, 0.714);  
 }
@@ -12,6 +13,10 @@
     box-sizing: border-box;
     font-family: "Playfair Display", serif;
     text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* background image for home page */
@@ -48,9 +53,9 @@ header {
 nav li {
     display: inline-block;
     list-style: none;
-    padding: 0px 20px;
+    padding: 0 20px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 
@@ -61,7 +66,7 @@ nav li a {
 .socials a {
     display: inline-block;
     color: var(--white);
-    font-size: 30px;
+    font-size: 1.875rem;
     cursor: pointer;
 }
 
@@ -73,7 +78,7 @@ nav li a:hover,
 }
 
 .checkbtn {
-    font-size: 30px;
+    font-size: 1.875rem;
     color: var(--white);
     cursor: pointer;
     display: none;
@@ -83,6 +88,32 @@ nav li a:hover,
     display: none;
 }
 
+/* styling for scroll to top */
+
+.scrollUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.18rem;
+    color: var(--white);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+    background: crimson;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+}
+
+.scrollUp.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(-50px);
+}
 
 /* styling for artwork */
 
@@ -91,6 +122,7 @@ nav li a:hover,
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    /* width: 100%; */
 }
 
 .card {
@@ -155,7 +187,7 @@ nav li a:hover,
 }
 
 .image-modals h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-top: 15px;
 }
 
@@ -176,123 +208,60 @@ nav li a:hover,
 
 /* About Us page */
 
-.about {
-    width: 100%;
-    height: 100vh;
-    background-color: #161922;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about-inner h1 {
+    font-size: 7.5rem;
+    text-align: center;
+    color: var(--off-white);
 }
 
-.about .about-content img {
-    height: auto;
-    width: 600px;
-    max-width: 100%;
+.image-1 {
+    background: url(images/about-image.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
-.about-text {
-    width: 550px;
-    max-width: 100%;
-    padding: 0 10px;
+.about-inner {
+    padding: 10% 0;
 }
 
 .about-content {
-    width: 1280px;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+    padding-bottom: 20px;
 }
 
-.about-text h1 {
-    color: #ffcc74;
-    font-size: 85px;
-    margin-bottom: 20px;
-    text-transform: capitalize;
+.about-content h2,
+.exhibitions-content h2 {
+    font-size: 2rem;
+    color: var(--dark-gray);
+    text-align: center;
+    font-weight: 300;
+    margin: 20px 0 10px;
 }
 
-.about-text h5 {
-    color: var(--white);
-    font-size: 25px;
-    margin-bottom: 25px;
-    text-transform: capitalize;
-    letter-spacing: 2px;
+.about-content p,
+.exhibitions-content p {
+    font-size: 1.1rem;
+    color: var(--dark-gray);
 }
 
-.about-text p {
-    color: var(--white);
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 1px;
-    margin-bottom: 45px;
-}
-
-.about-button {
-    background-color: #ffcc74;
-    color: #000;
-    border: 2px solid transparent;
-    padding: 10px 30p;
-    border-radius: 30px;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-.about-button:hover {
-    transform: scale(1.2);
-    background-color: transparent;
-    border: 2px solid #ffcc74;
-    color: #ffcc74;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-
-/* .about-container {
-    font-family: "Open Sans", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid red;
-}
-
-.about-section {
-    background: url(images/cat_sailboat.png) no-repeat left;
-    background-size: 55%;
-    overflow: hidden;
-    padding: 50px 0;
-}
-
-.inner-container {
-    width: 55%;
-    float: right;
-    background-color: var(--off-white);
-    padding: 150px;
-}
-
-.inner-container h2 {
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: 900;
-}
-
-.text {
-    font-size: 14px;
-    color: #545454;
-    line-height: 30px;
+.about-content p {
+    font-family: "Cormorant Garamond", serif;
+    color: var(--dark-gray);
     text-align: justify;
-    margin-bottom: 40px;
+    line-height: 30px;
+    margin: 0 70px 15px;
 }
 
-.skills {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 13px;
-} */
+.exhibitions-content {
+    padding-bottom: 30px;
+}
 
+.exhibitions-content p {
+    line-height: 1.5;
+    text-align: center;
+}
 
 /* footer */
 
@@ -300,6 +269,9 @@ nav li a:hover,
     background-color: #000;
     /* color: #fff; */
     padding: 20px 0;
+    /* position: absolute;
+    bottom: 0;
+    width: 100%; */
 }
 
 .footer-padding {
@@ -329,7 +301,7 @@ nav li a:hover,
     margin-top: 20px;
     text-align: center;
     color: var(--white);
-    font-size: 0.9em;
+    font-size: 0.9rem;
     border-top: 1px solid #444;
     padding-top: 20px;
 }
@@ -350,39 +322,6 @@ nav li a:hover,
     }
 }
 
-/* @media screen and (max-width: 1000px) {
-    .about-section {
-        background-size: 100%;
-        padding: 100px 40px;
-    }
-
-    .inner-container {
-        width: 100%;
-    }
-} */
-
-/* @media screen and (max-width: 600px) {
-    .image-modals {
-        width: 100%;
-    }
-
-    .about-section {
-        padding: 0;
-    }
-
-    .inner-container {
-        padding: 75px;
-        text-align: center;
-    }
-
-    .skills {
-        display: flex;
-        flex-direction: column;
-        font-weight: 700;
-        font-size: 13px;
-        gap: 15px;
-    }
-} */
 
 @media screen and (max-width: 768px) {
     .image-modals {
@@ -414,7 +353,7 @@ nav li a:hover,
     }
 
     ul li a {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     #check:checked ~ ul {
@@ -440,23 +379,16 @@ nav li a:hover,
         width: 100%;
     }
 
-    /* .about-section {
-        padding: 0;
+    /* about page */
+
+    .image-1 {
+        padding: 40px 50px;
     }
 
-    .inner-container {
-        padding: 75px; 
-        text-align: center;
+    .about-inner h1 {
+        font-size: 3rem;
     }
 
-    .skills {
-        display: flex;
-        flex-direction: column;
-        font-weight: 700;
-        font-size: 13px;
-        gap: 15px;
-    }  */
-    
   }
 
 
