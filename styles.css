@@ -263,6 +263,26 @@ nav li a:hover,
     text-align: center;
 }
 
+/* contact page */
+
+.contact-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* footer */
 
 .footer {
