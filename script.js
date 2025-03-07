@@ -52,4 +52,28 @@ window.addEventListener("scroll", () => {
     }
 })
 
-// contact
+
+
+// contact form
+const contactButton = document.getElementById("contact-button");
+const contactForm = document.getElementById("contact-form");
+const contactClose = document.getElementById("contact-close");
+
+// function to open the pop up
+function openContact() {
+    contactForm.style.display = "flex";
+}
+
+// function to close the pop up
+function closeContact() {
+    contactForm.style.display = "none";
+}
+
+// event listeners
+contactButton.addEventListener('click', openContact);
+closeContact.addEventListener('click', closeContact);
+window.addEventListener('click', (e) => {
+    if (e.target === contactForm) {
+        closeContact();
+    }
+})
