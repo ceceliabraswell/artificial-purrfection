@@ -51,3 +51,5 @@ window.addEventListener("scroll", () => {
         scrollUp.classList.remove("active");  // changes opacity of scroll up icon to 0 after 100px
     }
 })
+
+// contact
