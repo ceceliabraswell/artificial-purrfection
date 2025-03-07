@@ -2,6 +2,7 @@
     --white: #fff;
     --off-white: #fff8f8;;
     --gold: gold;
+    --blue: blue;
     --dark-gray: #555;
     --transparent: rgba(0, 0, 0, 0.379);  
     --transparent2: rgba(0, 0, 0, 0.714);  
@@ -202,7 +203,7 @@ nav li a:hover,
 }
 
 .close:hover {
-    color: blue;
+    color: var(--blue);
 }
 
 
@@ -286,12 +287,17 @@ nav li a:hover,
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: blue;
+    background: var(--blue);
     color: var(--white);
     padding: 10px 15px;
     font-size: 1.2rem;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    background: rgba(0, 0, 255, 0.733);
 }
 
 /* footer */
