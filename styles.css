@@ -308,8 +308,8 @@ nav li a:hover,
     height: 50%;
     background-color: rgba(6, 6, 6, 0.929); /* Semi-transparent black */
     color: var(--white);
-    /* display: none;  */
-    display: flex;
+    display: none; 
+    /* display: flex; */
     justify-content: center;
     align-items: center;
 }

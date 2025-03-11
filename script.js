@@ -71,7 +71,7 @@ function closeContact() {
 
 // event listeners
 contactButton.addEventListener('click', openContact);
-closeContact.addEventListener('click', closeContact);
+contactClose.addEventListener('click', closeContact);
 window.addEventListener('click', (e) => {
     if (e.target === contactForm) {
         closeContact();
