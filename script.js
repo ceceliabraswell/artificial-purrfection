@@ -72,8 +72,9 @@ function closeContact() {
 // event listeners
 contactButton.addEventListener('click', openContact);
 contactClose.addEventListener('click', closeContact);
-window.addEventListener('click', (e) => {
-    if (e.target === contactForm) {
+
+document.addEventListener('click', (e) => {
+    if (contactForm.style.display === "flex" && !contactForm.contains(e.target) && e.target !== contactButton) {
         closeContact();
     }
 })

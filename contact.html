@@ -35,7 +35,7 @@
     </header>
 
     <div class="contact-container">
-        <button class="contact-button" id="contact-button=">Contact Us</button>
+        <button class="contact-button" id="contact-button">Contact Us</button>
     </div>
 
     <div class="contact-form" id="contact-form">
@@ -44,9 +44,11 @@
             <h2>drop us a line</h2>
             <form>
                 <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br><br>
+                <input type="text" id="name" name="name" required><br><br>
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="tel">Number:</label><br>
+                <input type="tel" id="tel" name="tel" required><br><br>
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message"></textarea><br><br>
                 <input type="submit" value="Submit">
