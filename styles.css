@@ -264,15 +264,10 @@ nav li a:hover,
     text-align: center;
 }
 
-/* contact page */
 
-/* .contact-container {
-    
-} */
 
-/* .contact-form {
-    min-width: 50%;
-} */
+
+/* new contact form styling */
 
 .contact-container {
     background: url(images/contact-image.png) no-repeat;
@@ -306,29 +301,30 @@ nav li a:hover,
     left: 25%;
     width: 50%;
     height: 50%;
-    background-color: rgba(6, 6, 6, 0.929); /* Semi-transparent black */
+    background-color: rgba(6, 6, 6, 0.929); 
     color: var(--white);
     display: none; 
-    /* display: flex; */
     justify-content: center;
     align-items: center;
 }
 
-/* Style for the pop-up form container */
-#contact-popup {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
-  }
-  
-  /* Style for the close button */
-  #contact-close {
+/* Style for the close button */
+#contact-close {
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
-  }
+}
+
+/* Style for the pop-up form container */
+/* #contact-popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+} */
+
+
+
 
 /* footer */
 
@@ -469,4 +465,15 @@ nav li a:hover,
       background-size: 100% 100%;
     }
   }
+
+
+
+
+
+
+
+  /* old contact page */
+
+
+
 
