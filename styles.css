@@ -297,15 +297,39 @@ nav li a:hover,
 
 #contact-form {
     position: fixed;
-    top: 25%;
+    /* top: 25%;
     left: 25%;
     width: 50%;
-    height: 50%;
+    height: 50%; */
     background-color: rgba(6, 6, 6, 0.929); 
     color: var(--white);
     display: none; 
     justify-content: center;
     align-items: center;
+    text-align: center;
+
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
+
+#contact-form h2 {
+    padding-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: var(--white);
 }
 
 /* Style for the close button */
