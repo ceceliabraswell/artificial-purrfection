@@ -73,12 +73,6 @@ function closeContact() {
 contactButton.addEventListener('click', openContact);
 contactClose.addEventListener('click', closeContact);
 
-document.addEventListener('click', (e) => {
-    if (contactForm.style.display === "flex" && !contactForm.contains(e.target) && e.target !== contactButton) {
-        closeContact();
-    }
-})
-
 function submitAlert() {
     alert("Your message has been sent!")
 }
