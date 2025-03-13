@@ -498,6 +498,20 @@ nav li a:hover,
         font-size: 3rem;
     }
 
+    .contact-popup {
+        width: 90%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    #contact-form {
+        padding: 20px;
+    }
+
+    button {
+        padding: 10px;
+    }
+
   }
 
 
