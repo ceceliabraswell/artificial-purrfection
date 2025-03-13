@@ -78,3 +78,7 @@ document.addEventListener('click', (e) => {
         closeContact();
     }
 })
+
+function submitAlert() {
+    alert("Your message has been sent!")
+}
