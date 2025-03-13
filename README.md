@@ -7,7 +7,7 @@ Each piece of art featured here is the result of prompts provided to ChatGPT, ge
 Beyond the art itself, Artificial Purrfection is a testament to the power of technology and imagination. This platform isn’t just a portfolio— it’s a continuous learning journey, where I explore new ways to enhance and grow my web development skills.
 
 
-![Screen shot of Artificial Purrfection.](./images/Artificial-Purrfection.png)
+
 
 ## Built with
 
